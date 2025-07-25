@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookmark manager</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookmark manager</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Bookmark manager</h1>
-    
-    <div class="input section">
-        <input id="bookmark-url" type="url" placeholder="Enter a bookmark url" autocomplete="off">
-        <input id="bookmark-category" type="text" placeholder="Enter category" autocomplete="off">
-        <button onclick="addBookmark()">Add Bookmark</button>
-    </div>
+<h1>Bookmark manager</h1>
 
-    <div class="bookmark-list">
-        <div class="empty-state">No bookmarks yet. Add one above!</div>
+<div class="container">
+  <div class="input section">
+    <div class="input-row">
+      <input id="bookmark-url" type="url" placeholder="Enter bookmark URL" autocomplete="off">
+      <input id="bookmark-category" type="text" placeholder="Enter category" autocomplete="off">
+      <button onclick="addBookmark()">Add Bookmark</button>
     </div>
+  </div>
 
-    <footer class="footer">
-        <h4>Made with ❤️ by<a href="https://github.com/kaustavxg" class="developer-link" target="_blank"> Kaustav Gupta</a></h4>
-    </footer>
-</body>
+  <div class="bookmark-list">
+    <div class="empty-state">No bookmarks yet. Add one above!</div>
+  </div>
+</div>
+
+<footer class="footer">
+  <h4>Made with ❤️ by<a href="https://github.com/kaustavxg" class="developer-link" target="_blank"> Kaustav Gupta</a></h4>
+</footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
 <script src="script.js"></script>
+</body>
 </html>
