@@ -1,5 +1,5 @@
 async function getBookmark(){
-    const response = await axios.get("http://localhost:3035/");
+    const response = await axios.get("https://full-stack-bookmark-manager.onrender.com/");
     const bookmarks = response.data;
 
     const bookmarkList = document.querySelector('.bookmark-list');
@@ -40,7 +40,7 @@ async function addBookmark(){
     }
 
     try{
-        await axios.post("http://localhost:3035/addBookmark", {
+        await axios.post("https://full-stack-bookmark-manager.onrender.com/addBookmark", {
             url: url.value,
             category: category.value
         })
@@ -58,7 +58,7 @@ async function addBookmark(){
 
 async function deleteBookmark(id){
     try {
-        await axios.delete(`http://localhost:3035/deleteBookmark/${id}`)
+        await axios.delete(`https://full-stack-bookmark-manager.onrender.com/deleteBookmark/${id}`)
     } catch (error){
         console.log(`Error in deleting bookmark: ${error}`);
     }
